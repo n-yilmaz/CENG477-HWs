@@ -5,9 +5,7 @@
 
 using namespace std;
 
-/*
- * Calculate cross product of vec3 a, vec3 b and return resulting vec3.
- */
+
 Vec3 cross_prod(Vec3& a, Vec3& b)
 {
 
@@ -18,9 +16,7 @@ Vec3 cross_prod(Vec3& a, Vec3& b)
     return {res_x, res_y, res_z, -1};
 }
 
-/*
- * Calculate dot product of vec3 a, vec3 b and return resulting value.
- */
+
 double dot_prod(Vec3& a, Vec3& b)
 {
     return a.x * b.x + a.y * b.y + a.z * b.z;
@@ -47,9 +43,7 @@ Matrix4 id_matrix()
     return result;
 }
 
-/*
- * Multiply matrices m1 (Matrix4) and m2 (Matrix4) and return the result matrix r (Matrix4).
- */
+
 Matrix4 matxmat_mult(Matrix4& m1, Matrix4& m2)
 {
     Matrix4 result;
@@ -169,9 +163,7 @@ Vec3 findNewNormal(Matrix4& m, Vec3& v){
     return {vals[0], vals[1], vals[2], v.colorId};
 } 
         
-/*
- * Multiply matrix m (Matrix4) with vector v (vec4) and store the result in vector r (vec4).
- */
+
 Vec4 matxvec_mult(Matrix4& m, Vec4& v)
 {
     double values[4];
